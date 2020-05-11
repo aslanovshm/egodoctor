@@ -1,0 +1,104 @@
+.advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.advantages__item {
+  position: relative;
+  width: 250px;
+  padding-top: 180px;
+  text-align: center;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 165px;
+    height: 165px;
+    margin-right: -50%;
+    border-radius: 50%;
+    background-color: $second-theme-color;
+    transform: translate(-50%, 0);
+  }
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 39%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/sprite.png);
+
+    @include desktop {
+      top: 34%;
+    }
+  }
+
+  &--calendar:after {
+    width: 54px;
+    height: 54px;
+    background-position: -188px -5px;
+  }
+
+  &--alcohol:after {
+    width: 59px;
+    height: 59px;
+    background-position: -5px -5px;
+  }
+
+  &--happy:after {
+    width: 42px;
+    height: 56px;
+    background-position: -78px -177px;
+  }
+
+  &--shield:after {
+    width: 48px;
+    height: 56px;
+    background-position: -263px -162px;
+  }
+
+  &--headache:after {
+    width: 49px;
+    height: 62px;
+    background-position: -130px -177px;
+  }
+
+  &--hands:after {
+    width: 63px;
+    height: 43px;
+    background-position: -5px -177px;
+  }
+
+  &--sleep:after {
+    width: 64px;
+    height: 53px;
+    background-position: -254px -228px;
+  }
+
+  &--health:after {
+    width: 55px;
+    height: 50px;
+    background-position: -189px -177px;
+  }
+
+  @include tablet-max {
+    margin-bottom: 50px;
+  }
+
+  @include desktop {
+    width: 210px;
+  }
+}
+
+.advantages__item-title {
+  display: block;
+  width: 208px;
+  margin: auto;
+}

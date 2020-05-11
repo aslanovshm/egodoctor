@@ -1,0 +1,32 @@
+.socials-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  width: 165px;
+  list-style: none;
+
+  @include tablet {
+    width: 400px;
+  }
+}
+
+.socials__links-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 46px;
+  height: 46px;
+  margin-bottom: 10px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+
+  &:hover {
+    border-color: $main-theme-color;
+  }
+
+  &:hover > svg {
+    fill: $main-theme-color;
+  }
+}

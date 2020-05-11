@@ -1,0 +1,24 @@
+.programs {
+  padding: 52px 0 33px;
+  text-align: center;
+}
+
+.programs__heading {
+  margin-bottom: 38px;
+}
+
+.programs__list {
+  margin: 0 0 30px;
+  padding: 0;
+  list-style: none;
+
+  @include tablet {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.programs__note {
+  font-size: inherit;
+  font-style: italic;
+}

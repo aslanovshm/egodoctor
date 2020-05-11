@@ -1,0 +1,99 @@
+.about-me {
+  padding: 40px 0 35px;
+}
+
+.about-me__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.about-me__image {
+  width: 200px;
+  margin-bottom: 20px;
+
+  @include desktop {
+    width: 459px;
+    height: 588px;
+  }
+}
+
+.about-me__info {
+  text-align: center;
+
+  @include tablet {
+    width: 500px;
+  }
+
+  @include desktop {
+    width: 653px;
+  }
+
+  & p {
+    margin: 0 0 9px;
+    text-align: left;
+  }
+}
+
+.about-me__advantages {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 471px;
+  margin: 35px auto 0;
+  padding: 0;
+  list-style: none;
+}
+
+.about-me__advantage {
+  position: relative;
+  width: 200px;
+  margin-bottom: 34px;
+  padding-top: 74px;
+  text-align: center;
+
+  @media (max-width: 500px) {
+    margin: 0 auto 34px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background-image: url(../images/sprite.png);
+  }
+
+  &--calendar:before {
+    top: 30px;
+    left: 100px;
+    width: 54px;
+    height: 54px;
+    background-position: -188px -5px;
+  }
+
+  &--alcohol:before {
+    top: 23px;
+    width: 59px;
+    height: 59px;
+    background-position: -5px -5px;
+  }
+
+  &--happy:before {
+    top: 28px;
+    width: 42px;
+    height: 56px;
+    background-position: -78px -177px;
+  }
+
+  &--shield:before {
+    top: 28px;
+    left: 105px;
+    width: 48px;
+    height: 56px;
+    background-position: -263px -162px;
+  }
+}

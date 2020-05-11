@@ -1,0 +1,18 @@
+.procedure {
+  box-sizing: border-box;
+  min-height: 372px;
+  padding: 88px 0 93px;
+  background-image: url("../images/doctor-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+}
+
+.procedure__heading {
+  margin-bottom: 32px;
+}
+
+.procedure__description {
+  max-width: 700px;
+  margin: 0;
+}

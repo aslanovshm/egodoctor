@@ -1,0 +1,21 @@
+.reason {
+  padding: 47px 0 50px;
+  background-color: #1c1c1c;
+  background-image: url("../images/alcoholic-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  color: #ffffff;
+
+  @include mobile-only {
+    background-size: cover;
+  }
+}
+
+.reason__text {
+  max-width: 737px;
+  margin-bottom: 27px;
+
+  & p {
+    margin-bottom: 23px;
+  }
+}

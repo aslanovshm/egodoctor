@@ -1,0 +1,44 @@
+@font-face {
+  font-family: "PFCentroSansPro";
+  src: url("../fonts/pfcentrosansprolight.woff2") format("woff2"),
+    url("../fonts/pfcentrosansprolight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PFCentroSansPro";
+  src: url("../fonts/pfcentrosansprolightitalic.woff2") format("woff2"),
+    url("../fonts/pfcentrosansprolightitalic.woff") format("woff");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PFCentroSansPro";
+  src: url("../fonts/pfcentrosansproregular.woff2") format("woff2"),
+    url("../fonts/pfcentrosansproregular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PFCentroSansPro";
+  src: url("../fonts/pfcentrosanspromedium.woff2") format("woff2"),
+    url("../fonts/pfcentrosanspromedium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PFCentroSansPro";
+  src: url("../fonts/pfcentrosansprobold.woff2") format("woff2"),
+    url("../fonts/pfcentrosansprobold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}

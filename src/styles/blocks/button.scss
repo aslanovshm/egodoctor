@@ -1,0 +1,27 @@
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  width: 172px;
+  padding: 11px 0 10px;
+  text-decoration: none;
+  text-align: center;
+  border-radius: 20px;
+
+  &--orange {
+    font-weight: 700;
+    color: #ffffff;
+    background-color: $main-theme-color;
+  }
+
+  &--transparent {
+    width: 159px;
+    font-weight: 300;
+    color: $main-theme-color;
+    border: 1px solid $main-theme-color;
+  }
+
+  &--cream {
+    color: $main-theme-color;
+    background-color: #fff0e2;
+  }
+}

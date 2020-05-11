@@ -1,0 +1,41 @@
+.page-header {
+  padding: 4px 0 17px;
+  background-color: $second-theme-color;
+}
+
+.page-header__top {
+  margin-bottom: 15px;
+}
+
+.page-header__bottom {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.page-header__logo {
+  @include mobile-only {
+    margin-bottom: 20px;
+  }
+
+  @include tablet {
+    margin-right: 47px;
+  }
+}
+
+.page-header__main-nav {
+  @include mobile-only {
+    order: 1;
+    margin-top: 20px;
+  }
+
+  @include desktop {
+    margin-right: 56px;
+  }
+}
+
+.page-header__button {
+  @media (min-width: 413px) and (max-width: 640px) {
+    margin-left: auto;
+  }
+}

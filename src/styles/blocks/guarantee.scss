@@ -1,0 +1,20 @@
+.guarantee {
+  padding: 0 0 71px;
+  overflow: hidden;
+}
+
+.guarantee__heading {
+  margin-bottom: 37px;
+  text-align: center;
+}
+
+.guarantee__advantages {
+  margin-bottom: -38px;
+}
+
+.guarantee__advantages-item {
+  @include desktop {
+    width: 33%;
+    margin-bottom: 38px;
+  }
+}

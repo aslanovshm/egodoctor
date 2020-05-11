@@ -1,0 +1,41 @@
+.slider__button {
+  position: relative;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  background-color: $main-theme-color;
+
+  &:after {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 9px;
+    width: 10px;
+    height: 10px;
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+  }
+
+  &--prev,
+  &--next {
+    position: absolute;
+    top: 40%;
+  }
+
+  &--prev {
+    left: 0;
+  }
+
+  &--next {
+    right: 0;
+  }
+
+  &--prev:after {
+    transform: rotate(136deg);
+  }
+
+  &--next:after {
+    transform: rotate(-45deg);
+    left: 6px;
+  }
+}

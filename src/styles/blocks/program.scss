@@ -1,0 +1,178 @@
+.program {
+  position: relative;
+  box-sizing: border-box;
+  padding-bottom: 137px;
+  border-radius: 5px;
+
+  &--mini {
+    background-color: #f5f5f5;
+  }
+
+  &--standart {
+    background-color: #fff0e2;
+  }
+
+  &--premium {
+    background-color: #f86d56;
+    color: #ffffff;
+  }
+
+  @include tablet {
+    width: 33%;
+  }
+
+  @include desktop {
+    width: 360px;
+    min-height: 778px;
+  }
+}
+
+.program__header {
+  position: relative;
+  padding-top: 32px;
+  padding-bottom: 48px;
+
+  &--mini {
+    background-color: #e3e3e3;
+  }
+
+  &--standart {
+    background-color: #ffddbe;
+  }
+
+  &--premium {
+    background-color: #ec5238;
+    color: #ffffff;
+  }
+}
+
+.program__name {
+  margin: 0;
+  font-size: 20px;
+  line-height: 36px;
+  text-transform: uppercase;
+
+  @include desktop {
+    font-size: 24px;
+    line-height: 40px;
+  }
+}
+
+.program__content {
+  padding: 12px 20px 0 28px;
+
+  @include tablet-max {
+    font-size: 16px;
+  }
+}
+
+.program__features {
+  margin: 0 0 29px;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+
+  & li {
+    padding-left: 50px;
+  }
+
+  & li:not(:last-child) {
+    margin-bottom: 24px;
+  }
+}
+
+.program__feature {
+  position: relative;
+  padding-left: 50px;
+
+  &:not(:last-child) {
+    margin-bottom: 24px;
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../images/sprite.png);
+  }
+
+  &--syringe:before {
+    width: 35px;
+    height: 37px;
+    background-position: -363px -5px;
+  }
+
+  &--pills:before {
+    width: 21px;
+    height: 26px;
+    background-position: -263px -126px;
+  }
+
+  &--cogs:before {
+    width: 29px;
+    height: 31px;
+    background-position: -192px -69px;
+  }
+
+  &--heart:before {
+    width: 28px;
+    height: 26px;
+    background-position: -64px -110px;
+  }
+
+  &--syringe-white:before {
+    width: 35px;
+    height: 37px;
+    background-position: -363px -52px;
+  }
+
+  &--pills-white:before {
+    width: 21px;
+    height: 26px;
+    background-position: -294px -126px;
+  }
+
+  &--cogs-white:before {
+    width: 29px;
+    height: 31px;
+    background-position: -231px -69px;
+  }
+
+  &--heart-white:before {
+    width: 28px;
+    height: 26px;
+    background-position: -5px -237px;
+  }
+
+  &--atom:before {
+    width: 29px;
+    height: 29px;
+    background-position: -149px -5px;
+  }
+
+  &--liver:before {
+    width: 32px;
+    height: 25px;
+    background-position: -270px -60px;
+  }
+}
+
+.program__description {
+  margin: 0;
+}
+
+.program__bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 36px;
+  margin-right: -50%;
+  transform: translate(-50%, 0);
+}
+
+.program__price {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 24px;
+  line-height: 40px;
+}

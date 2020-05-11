@@ -1,0 +1,128 @@
+.start-screen {
+  background-color: #f0eae4;
+  background-image: url("../images/hospital-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.start-screen__inner {
+  position: relative;
+}
+
+.start-screen__wrap {
+  max-width: 470px;
+  padding: 56px 0 79px;
+
+  @include desktop {
+    max-width: 720px;
+    padding-top: 91px;
+  }
+}
+
+.start-screen__heading {
+  margin: 0 0 17px;
+  font-size: 36px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #1f1f1f;
+
+  @include desktop {
+    font-size: 48px;
+    line-height: 54px;
+  }
+}
+
+.start-screen__subheading {
+  margin: 0 0 24px;
+  font-size: 24px;
+  line-height: 30px;
+  font-weight: 500;
+
+  @include desktop {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}
+
+.start-screen__button {
+  margin-bottom: 49px;
+}
+
+.start-screen__advantages {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-weight: 500;
+  overflow: hidden;
+}
+
+.start-screen__advantage {
+  position: relative;
+  box-sizing: border-box;
+  width: 250px;
+  margin-bottom: 26px;
+  padding-left: 45px;
+  margin-right: 83px;
+
+  &--clock:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 25px;
+    height: 23px;
+    background-image: url(../images/sprite.png);
+    background-position: -157px -69px;
+  }
+
+  &--lock:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 22px;
+    background-image: url(../images/sprite.png);
+    background-position: -312px -94px;
+  }
+
+  &--check:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 20px;
+    background-image: url(../images/sprite.png);
+    background-position: -74px -69px;
+  }
+
+  &--rouble:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 17px;
+    height: 21px;
+    background-image: url(../images/sprite.png);
+    background-position: -325px -126px;
+  }
+}
+
+.start-screen__doctor {
+  display: none;
+
+  @include tablet {
+    position: absolute;
+    right: -6px;
+    bottom: 0;
+    display: block;
+    width: 420px;
+  }
+
+  @include desktop {
+    width: 450px;
+  }
+}

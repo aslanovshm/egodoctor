@@ -1,0 +1,96 @@
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto 33px;
+  padding: 0;
+  list-style: none;
+}
+
+.pagination__item {
+  display: inline-block;
+
+  & a {
+    display: inline-block;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    color: #292929;
+  }
+
+  &--current {
+    position: relative;
+    text-align: center;
+    background-color: $main-theme-color;
+    border-radius: 50%;
+
+    & a {
+      color: #ffffff;
+    }
+  }
+
+  &--last {
+    margin-right: 10px;
+  }
+
+  &--prev {
+    position: relative;
+    margin-right: 10px;
+    padding-left: 25px;
+
+    & a {
+      width: auto;
+      color: $main-theme-color;
+    }
+
+    &:before {
+      content: "<<";
+      position: absolute;
+      top: 9px;
+      left: 0;
+      color: $main-theme-color;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $main-theme-color;
+    }
+  }
+
+  &--next {
+    position: relative;
+    padding-right: 25px;
+
+    & a {
+      width: auto;
+      color: $main-theme-color;
+    }
+
+    &:before {
+      content: ">>";
+      position: absolute;
+      top: 9px;
+      right: 0;
+      color: $main-theme-color;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      background-color: $main-theme-color;
+    }
+  }
+}

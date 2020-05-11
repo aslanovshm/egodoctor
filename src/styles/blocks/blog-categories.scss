@@ -1,0 +1,47 @@
+.blog-categories {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 34px 0 18px;
+  list-style: none;
+}
+
+.blog-categories__item {
+  min-width: 200px;
+  margin-right: 19px;
+  margin-bottom: 20px;
+  text-align: center;
+  border: 1px solid $main-theme-color;
+  border-radius: 20px;
+
+  & a {
+    box-sizing: border-box;
+    display: block;
+    padding: 7px 25px;
+    text-decoration: none;
+    color: #1f1f1f;
+  }
+
+  &--current {
+    position: relative;
+    background-color: $main-theme-color;
+
+    & a {
+      color: #ffffff;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      bottom: -3px;
+      left: 50%;
+      margin-right: -50%;
+      width: 0;
+      height: 0;
+      border-left: 13px solid transparent;
+      border-right: 13px solid transparent;
+      border-top: 9px solid $main-theme-color;
+      transform: translate(-50%, 50%);
+    }
+  }
+}
